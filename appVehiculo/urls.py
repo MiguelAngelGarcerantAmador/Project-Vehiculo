@@ -1,7 +1,17 @@
 from django.urls import path
-from appVehiculo.views import claseVehiculoView, envioView, facturaView, inventarioView, ordenCompraView, personaView, tipoPagoView, tipoVehiculoView, trazabilidadView, vehiculoView
 
-
+from appVehiculo.views import (
+    claseVehiculoView,
+    envioView,
+    facturaView,
+    inventarioView,
+    ordenCompraView,
+    personaView,
+    tipoPagoView,
+    tipoVehiculoView,
+    trazabilidadView,
+    vehiculoView,
+)
 
 urlpatterns = [
     path("clase/", claseVehiculoView.gestionClaseVehiculo),

@@ -1,8 +1,8 @@
 from django.db import models
 
-from .tipoPago import TipoPago
-from .persona import Persona
 from .ordenCompra import OrdenCompra
+from .persona import Persona
+from .tipoPago import TipoPago
 
 
 class Factura(models.Model):
@@ -11,6 +11,6 @@ class Factura(models.Model):
     producto = models.CharField(max_length=255)
     otros_costos = models.FloatField()
     valor_factura = models.FloatField()
-    persona_id = models.ForeignKey(Persona, on_delete=models. CASCADE)
+    persona_id = models.ForeignKey(Persona, on_delete=models.CASCADE)
     tipo_pago_id = models.ForeignKey(TipoPago, on_delete=models.CASCADE)
     orden_compra = models.ForeignKey(OrdenCompra, on_delete=models.CASCADE)

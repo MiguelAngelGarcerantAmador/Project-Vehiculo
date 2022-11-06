@@ -1,7 +1,7 @@
 from django.db import models
 
-from .vehiculo import Vehiculo
 from .persona import Persona
+from .vehiculo import Vehiculo
 
 
 class Inventario(models.Model):
