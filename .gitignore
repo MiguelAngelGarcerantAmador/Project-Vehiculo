@@ -1,3 +1,4 @@
 env/
-.pyc
-settings.py
+*.pyc
+.key
+__pycache__/

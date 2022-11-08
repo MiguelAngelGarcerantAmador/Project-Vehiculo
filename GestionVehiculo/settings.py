@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-2w$hx7$nd#zdou3xyfj3o9n9yngw6y^=97c4tm)e6iwlkvpx$%"
+SECRET_KEY = "your secret key"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -78,11 +78,11 @@ WSGI_APPLICATION = "GestionVehiculo.wsgi.application"
 DATABASES = {
     "default": {
         "ENGINE": "django.db.backends.postgresql_psycopg2",
-        "NAME": "d9otpau5vh4g1v",
-        "USER": "wxjhjfhmhhwqkk",
-        "PASSWORD": "f9d085e62084b31f8829c4415a7e785c9c82e9ffeced2efb897a80da9db835c0",  # localhost en caso de tenerlo en local y la URL de la base de datos en caso de tenerlo en algún servicio en la nube
-        "HOST": "ec2-35-170-146-54.compute-1.amazonaws.com",
-        "PORT": "5432",  # Si usas el puerto default no pongas esta línea y si lo has cambiado especifícaselo aquí
+        "NAME": "your name databases",
+        "USER": "your username databases",
+        "PASSWORD": "your password databases",  # localhost en caso de tenerlo en local y la URL de la base de datos en caso de tenerlo en algún servicio en la nube
+        "HOST": "your host databases",
+        "PORT": "your port databases",  # Si usas el puerto default no pongas esta línea y si lo has cambiado especifícaselo aquí
     }
 }
 
